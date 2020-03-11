@@ -1,0 +1,46 @@
+-- 1 --
+
+/index.txt
+Content-Type: text/plain
+Content-Length: 14
+Server: nginx/1.2.2
+
+/images/info.png
+Content-Type: image/png
+Content-Length: 200227
+Server: nginx/1.2.2
+
+/media/Water.mp4
+Content-Type: application/octet-stream
+Content-Length: 1137202
+Server: nginx/1.2.2
+
+-- 2 --
+
+http://localhost/lw1/mysql_is_a_database_server.html
+404 Not Found
+Означает: ресурс не найден. 
+Код: ошибка. 
+Решение: создать файл.
+
+http://localhost/lw1/nginx_is_fast_http_server.txt
+200 OK
+Означает: ресурс найден и отдан. 
+Код: специальное поведение
+
+http://localhost/lw1/php_is_a_server_scripting_language.php
+302 Found
+Означает: перенаправление, ресурс отсуствует временно. 
+Код: специальное поведение
+
+http://localhost/lw1/javascript_is_a_client_side_language.php?how_to_work=hardly
+400
+Означает: плохой запрос от клиента
+Код: ошибка
+Решение: перейти по ссылке http://localhost/lw1/javascript_is_a_client_side_language.php?how_to_work=hard
+
+-- 3 --
+charset нужен для указания кодировки страницы.
+При его отсутсвии используется набора символов ISO 8859-1.
+Если charset задан не верно, то мы увидим нечитаемый текст.
+http://localhost/lw1/all_begin_from_http.html текст не читаем из-за файла находящегося в кодировке utf-8, отображение можно исправить указав в самом начале файла <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
