@@ -5,9 +5,9 @@ Content-Type: text/plain
 Content-Length: 14
 Server: nginx/1.2.2
 
-/images/info.png
+/images/web_technologies.png
 Content-Type: image/png
-Content-Length: 200227
+Content-Length: 335525
 Server: nginx/1.2.2
 
 /media/Water.mp4
