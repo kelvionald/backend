@@ -48,6 +48,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CheckIdentifierLibrary\CheckIdentifierLibrary.csproj">
+      <Project>{d7f8449b-73ce-4586-a775-a1b878895731}</Project>
+      <Name>CheckIdentifierLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

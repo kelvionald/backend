@@ -9,12 +9,21 @@ namespace CheckIdentifierTests
         [TestMethod]
         public void TestDetermineIdentifier()
         {
-            Assert.AreEqual(false, CheckIdentifier.IsIdentifier(""));
-            Assert.AreEqual(false, CheckIdentifier.IsIdentifier("1"));
-            Assert.AreEqual(false, CheckIdentifier.IsIdentifier("1a"));
-            Assert.AreEqual(true, CheckIdentifier.IsIdentifier("a"));
-            Assert.AreEqual(true, CheckIdentifier.IsIdentifier("a1"));
-            Assert.AreEqual(true, CheckIdentifier.IsIdentifier("A"));
+            CheckIdentifier checkIdentifier = new CheckIdentifier();
+
+            Assert.IsFalse(checkIdentifier.IsIdentifier(""));
+            Assert.IsTrue(checkIdentifier.IsEmpty());
+
+            Assert.IsFalse(checkIdentifier.IsIdentifier("1"));
+            Assert.IsFalse(checkIdentifier.IsEmpty());
+            Assert.AreEqual(0, checkIdentifier.GetBadIndex());
+
+            Assert.IsFalse(checkIdentifier.IsIdentifier("1a"));
+            Assert.AreEqual(0, checkIdentifier.GetBadIndex());
+
+            Assert.IsTrue(checkIdentifier.IsIdentifier("a"));
+            Assert.IsTrue(checkIdentifier.IsIdentifier("a1"));
+            Assert.IsTrue(checkIdentifier.IsIdentifier("A"));
         }
     }
 }
