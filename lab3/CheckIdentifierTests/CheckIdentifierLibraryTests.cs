@@ -21,6 +21,12 @@ namespace CheckIdentifierTests
             Assert.IsFalse(checkIdentifier.IsIdentifier("1a"));
             Assert.AreEqual(0, checkIdentifier.GetBadIndex());
 
+            Assert.IsFalse(checkIdentifier.IsIdentifier("Ъ"));
+            Assert.AreEqual(0, checkIdentifier.GetBadIndex());
+
+            Assert.IsFalse(checkIdentifier.IsIdentifier("aЪ"));
+            Assert.AreEqual(1, checkIdentifier.GetBadIndex());
+
             Assert.IsTrue(checkIdentifier.IsIdentifier("a"));
             Assert.IsTrue(checkIdentifier.IsIdentifier("a1"));
             Assert.IsTrue(checkIdentifier.IsIdentifier("A"));

@@ -28,6 +28,11 @@ namespace CheckIdentifierLibrary
             return badIndex;
         }
 
+        private bool IsLetter(char ch)
+        {
+            return 'a' <= ch && ch <= 'z' || 'A' <= ch && ch <= 'Z';
+        }
+
         public bool IsIdentifier(string value)
         {
             resetState();
@@ -36,14 +41,14 @@ namespace CheckIdentifierLibrary
                 isEmpty = true;
                 return false;
             }
-            if (!char.IsLetter(value[0]))
+            if (!IsLetter(value[0]))
             {
                 badIndex = 0;
                 return false;
             }
             for (int i = 1; i < value.Length; i++)
             {
-                if (!char.IsLetterOrDigit(value[i]))
+                if (!(IsLetter(value[i]) || char.IsDigit(value[i])))
                 {
                     badIndex = i;
                     return false;
