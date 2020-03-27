@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckIdentifier", "CheckIdentifier\CheckIdentifier.csproj", "{84034E90-BBD0-43A1-B97A-8F53F5E4A5CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckIdentifierLibraryTests", "CheckIdentifierTests\CheckIdentifierLibraryTests.csproj", "{9FF2C572-52E8-4260-89FC-66AF9860190C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckIdentifierLibrary", "CheckIdentifierLibrary\CheckIdentifierLibrary.csproj", "{D7F8449B-73CE-4586-A775-A1B878895731}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveExtraBlanks", "RemoveExtraBlanks\RemoveExtraBlanks.csproj", "{03241A4F-6C98-4C7C-859B-B32539B2D4EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveExtraBlanksLibrary", "RemoveExtraBlanksLibrary\RemoveExtraBlanksLibrary.csproj", "{1236B4F5-F38B-4F90-B0F8-9AB73B1B40A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveExtraBlanksTests", "RemoveExtraBlanksTests\RemoveExtraBlanksTests.csproj", "{BD251405-E603-4CF9-9A89-3DC02D0866E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{D7F8449B-73CE-4586-A775-A1B878895731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7F8449B-73CE-4586-A775-A1B878895731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7F8449B-73CE-4586-A775-A1B878895731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03241A4F-6C98-4C7C-859B-B32539B2D4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03241A4F-6C98-4C7C-859B-B32539B2D4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03241A4F-6C98-4C7C-859B-B32539B2D4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03241A4F-6C98-4C7C-859B-B32539B2D4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1236B4F5-F38B-4F90-B0F8-9AB73B1B40A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1236B4F5-F38B-4F90-B0F8-9AB73B1B40A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1236B4F5-F38B-4F90-B0F8-9AB73B1B40A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1236B4F5-F38B-4F90-B0F8-9AB73B1B40A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD251405-E603-4CF9-9A89-3DC02D0866E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD251405-E603-4CF9-9A89-3DC02D0866E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD251405-E603-4CF9-9A89-3DC02D0866E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD251405-E603-4CF9-9A89-3DC02D0866E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
