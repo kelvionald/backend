@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RemoveExtraBlanksLibrary\RemoveExtraBlanksLibrary.csproj">
+      <Project>{1236b4f5-f38b-4f90-b0f8-9ab73b1b40a1}</Project>
+      <Name>RemoveExtraBlanksLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
