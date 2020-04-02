@@ -35,14 +35,15 @@ namespace Translator
                 {
                     string word = context.Request.Query["word"];
                     Console.WriteLine(word);
-                    Dictionary translation = Dictionary.Find(word);
+                    Dictionary dictionary = new Dictionary("dictionaries\\en-ru.txt");
+                    string translation = dictionary.Find(word);
                     if (translation == null)
                     {
                         await sendResponseAsync(context, "Not Found", 404);
                     }
                     else
                     {
-                        await sendResponseAsync(context, translation.WordTo);
+                        await sendResponseAsync(context, translation);
                     }
                 }
                 else

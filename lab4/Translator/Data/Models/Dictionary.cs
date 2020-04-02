@@ -8,17 +8,15 @@ namespace Translator.Data.Models
 {
     public class Dictionary
     {
-        public string WordFrom { get; set; }
-        public string WordTo { get; set; }
-        public Dictionary(string WordFrom, string WordTo)
+        public string path { get; set; }
+        public Dictionary(string path)
         {
-            this.WordFrom = WordFrom;
-            this.WordTo = WordTo;
+            this.path = path;
         }
-        public static Dictionary Find(string wordFrom)
+        public string Find(string wordFrom)
         {
             wordFrom = wordFrom.ToLower();
-            using (StreamReader sr = new StreamReader("dictionaries\\en-ru.txt"))
+            using (StreamReader sr = new StreamReader(path))
             {
                 while (!sr.EndOfStream)
                 {
@@ -30,8 +28,7 @@ namespace Translator.Data.Models
                     }
                     if (parts[0] == wordFrom)
                     {
-                        Dictionary dictionary = new Dictionary(parts[0], parts[1]);
-                        return dictionary;
+                        return parts[1];
                     }
                 }
             }
