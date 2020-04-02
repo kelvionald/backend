@@ -30,6 +30,10 @@ namespace Translator.Data.Models
                     {
                         return parts[1];
                     }
+                    else if (parts[1] == wordFrom)
+                    {
+                        return parts[0];
+                    }
                 }
             }
             return null;
