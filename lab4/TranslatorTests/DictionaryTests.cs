@@ -4,17 +4,17 @@ using Translator.Data.Models;
 
 namespace TranslatorTests
 {
-    public class UnitTest1
+    public class DictionaryTests
     {
         private Dictionary dictionary;
-        public UnitTest1()
+        public DictionaryTests()
         {
             dictionary = new Dictionary("../../../../Translator/dictionaries/en-ru.txt");
         }
         [Fact]
         public void TestDictionaryEnRuFindSuccess()
         {
-            Assert.Equal("ˇ", dictionary.Find("i"));
+            Assert.Equal("—è", dictionary.Find("i"));
         }
         [Fact]
         public void TestDictionaryEnRuFindFail()
@@ -24,7 +24,7 @@ namespace TranslatorTests
         [Fact]
         public void TestDictionaryRuEnFindSuccess()
         {
-            Assert.Equal("i", dictionary.Find("ˇ"));
+            Assert.Equal("i", dictionary.Find("—è"));
         }
     }
 }
