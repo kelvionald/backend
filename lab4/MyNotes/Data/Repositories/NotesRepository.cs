@@ -13,7 +13,7 @@ namespace MyNotes.Data.Repositories
     {
         private static string storagePath;
         private static List<Note> notesArray;
-        public static void SetStoragePathAsync(string path)
+        public static void SetStoragePath(string path)
         {
             NotesRepository.storagePath = path;
             if (!File.Exists(path))

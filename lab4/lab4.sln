@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translator", "Translator\Translator.csproj", "{57BEAAF7-961E-46A7-8052-93F3C8D4D047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslatorTests", "TranslatorTests\TranslatorTests.csproj", "{5291C874-65F2-451D-B6DC-2A0C779C8FCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslatorTests", "TranslatorTests\TranslatorTests.csproj", "{5291C874-65F2-451D-B6DC-2A0C779C8FCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNotes", "MyNotes\MyNotes.csproj", "{45220DCC-0E1C-4A4F-8E56-96D3EEBF7CE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyNotes", "MyNotes\MyNotes.csproj", "{45220DCC-0E1C-4A4F-8E56-96D3EEBF7CE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNotesTests", "MyNotesTests\MyNotesTests.csproj", "{D0BB20D6-D03A-4AEF-B801-3518CDECAB07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{45220DCC-0E1C-4A4F-8E56-96D3EEBF7CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45220DCC-0E1C-4A4F-8E56-96D3EEBF7CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45220DCC-0E1C-4A4F-8E56-96D3EEBF7CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0BB20D6-D03A-4AEF-B801-3518CDECAB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0BB20D6-D03A-4AEF-B801-3518CDECAB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0BB20D6-D03A-4AEF-B801-3518CDECAB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BB20D6-D03A-4AEF-B801-3518CDECAB07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

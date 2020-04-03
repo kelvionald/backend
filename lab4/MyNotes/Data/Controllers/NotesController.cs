@@ -21,7 +21,7 @@ namespace MyNotes.Data.Controllers
         public NotesController(INotesRepository notesRepository)
         {
             _notesRepository = notesRepository;
-            NotesRepository.SetStoragePathAsync("storage/notes.json");
+            NotesRepository.SetStoragePath("storage/notes.json");
         }
         [HttpGet]
         [Route("notes/list")]
