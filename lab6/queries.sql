@@ -132,11 +132,11 @@ FROM students_courses
 -- Пример:
 create table check_foreign_1
 (
-    key int
+    key int null
 );
 create table check_foreign_2
 (
-    key int
+    key int null
         constraint check_foreign_2_check_foreign_1_key_fk
             references check_foreign_1 (key)
 );
@@ -144,6 +144,8 @@ insert into check_foreign_1(key)
 VALUES (1);
 insert into check_foreign_1(key)
 VALUES (2);
+insert into check_foreign_1(key)
+VALUES (null);
 
 
 -- 6. (#15) Как удалить повторяющиеся строки с использованием ключевого слова Distinct?
